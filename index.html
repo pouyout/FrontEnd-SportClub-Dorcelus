@@ -1,128 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sport Club</title>
+<title>SportClub</title>
 
 <style>
 
-*{
+body{
+font-family:Arial, sans-serif;
 margin:0;
 padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#f5f5f5;
 }
 
 header{
-background:#111827;
-padding:20px 50px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-color:#22c55e;
-font-size:28px;
-font-weight:bold;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-size:18px;
-}
-
-nav a:hover{
-color:#22c55e;
+border:5px solid orange;
+padding:20px;
+position:relative;
 }
 
 main{
-height:80vh;
-background:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200') center/cover;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-}
-
-.contenido{
-background:rgba(0,0,0,0.6);
-padding:40px;
-border-radius:15px;
-}
-
-.contenido h1{
-font-size:50px;
-margin-bottom:20px;
-}
-
-.contenido p{
-font-size:20px;
-margin-bottom:20px;
-}
-
-button{
-background:#22c55e;
-border:none;
-padding:12px 25px;
-border-radius:8px;
-color:white;
-font-size:16px;
-cursor:pointer;
-}
-
-button:hover{
-background:#16a34a;
+border:5px solid red;
+padding:20px;
+margin-top:5px;
+position:relative;
 }
 
 section{
-padding:60px;
-text-align:center;
-}
-
-section h2{
-margin-bottom:40px;
-font-size:35px;
-}
-
-.planes{
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
-}
-
-.plan{
-background:white;
-width:250px;
-padding:30px;
-border-radius:15px;
-box-shadow:0px 0px 15px rgba(0,0,0,0.2);
-}
-
-.plan h3{
-margin-bottom:15px;
-color:#22c55e;
-}
-
-.plan p{
-margin-bottom:15px;
+border:5px solid darkred;
+padding:20px;
+margin-top:5px;
+position:relative;
 }
 
 footer{
-background:#111827;
-color:white;
-text-align:center;
-padding:30px;
+border:5px solid yellowgreen;
+padding:20px;
+margin-top:5px;
+position:relative;
+}
+
+.etiqueta{
+position:absolute;
+right:20px;
+top:10px;
+color:yellowgreen;
+font-size:20px;
+}
+
+nav a{
+margin-right:15px;
+}
+
+button{
+padding:8px 15px;
 }
 
 </style>
@@ -133,9 +64,9 @@ padding:30px;
 
 <header>
 
-<div class="logo">
-SPORT CLUB
-</div>
+<span class="etiqueta">Header</span>
+
+<h1>SportClub</h1>
 
 <nav>
 <a href="#">Inicio</a>
@@ -147,54 +78,50 @@ SPORT CLUB
 
 <main>
 
-<div class="contenido">
+<span class="etiqueta">Main</span>
 
-<h1>Transforma tu cuerpo</h1>
+<h1>Entrena con nosotros</h1>
 
-<p>Entrena con los mejores equipos y profesionales</p>
+<p>
+Bienvenido a SportClub, un espacio pensado para mejorar tu salud,
+entrenar con profesionales y participar en diferentes clases deportivas.
+</p>
 
-<button>Únete ahora</button>
-
-</div>
+<button>Conocer planes</button>
 
 </main>
 
 <section>
 
-<h2>Planes disponibles</h2>
+<span class="etiqueta">Section</span>
 
-<div class="planes">
+<h1>Planes disponibles</h1>
 
-<div class="plan">
-<h3>Plan Básico</h3>
-<p>$15.000 mensual</p>
-<p>Acceso al gimnasio</p>
-</div>
+<h2>Plan Básico</h2>
+<p>Acceso a clases grupales 2 veces por semana.</p>
+<p>Precio: $15.000</p>
 
-<div class="plan">
-<h3>Plan Premium</h3>
-<p>$25.000 mensual</p>
-<p>Incluye clases y entrenadores</p>
-</div>
+<h2>Plan Premium</h2>
+<p>Acceso ilimitado a clases y uso de instalaciones.</p>
+<p>Precio: $30.000</p>
 
-<div class="plan">
-<h3>Plan VIP</h3>
-<p>$40.000 mensual</p>
-<p>Acceso total + nutricionista</p>
-</div>
-
-</div>
+<h2>Plan Familiar</h2>
+<p>Plan para grupos familiares con beneficios especiales.</p>
+<p>Precio: $50.000</p>
 
 </section>
 
 <footer>
 
-<h3>Contacto</h3>
-<p>Email: contacto@sportclub.com</p>
+<span class="etiqueta">Footer</span>
+
+<h1>Contacto</h1>
+
+<p>Correo: contacto@sportclub.cl</p>
 <p>Teléfono: +56 9 1234 5678</p>
+<p>Dirección: Av. Principal 123, Santiago</p>
 
 </footer>
 
 </body>
-
 </html>
